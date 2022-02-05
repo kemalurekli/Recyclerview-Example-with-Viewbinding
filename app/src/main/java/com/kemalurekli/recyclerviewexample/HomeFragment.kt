@@ -15,7 +15,7 @@ import com.kemalurekli.recyclerviewexample.model.ContentModel
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    val contents = MutableLiveData<List<ContentModel>>()
+    private val contents = MutableLiveData<List<ContentModel>>()
     private val recyclerviewAdapter = RecyclerviewAdapter(arrayListOf())
 
 
